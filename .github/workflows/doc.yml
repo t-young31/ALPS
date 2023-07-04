@@ -26,6 +26,8 @@ jobs:
       run: sudo apt install graphviz
 
     - name: Build documentation
+      env:
+        ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}
       run: |
         # Ford converts the markdown files to html files, we need to change
         # the file extension before building to make links work.
