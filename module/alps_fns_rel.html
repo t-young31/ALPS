@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Documentation for ALPS">
+    <meta name="author" content="Kristopher Klein, Daniel Verscharen" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>alps_fns_rel &ndash; ALPS</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+         <script src="../js/jquery-2.1.3.min.js"></script>
+         <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">ALPS </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              <li><a href='../page/index.html'>Readme</a></li>
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+                 data-toggle="dropdown" role="button"
+                 aria-haspopup="true"
+                 aria-expanded="false">
+                 Contents <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="../lists/modules.html">Modules</a></li>
+                  <li><a href="../lists/procedures.html">Procedures</a></li>
+                  <li><a href="../lists/types.html">Derived Types</a></li>
+                  <li><a href="../lists/programs.html">Programs</a></li>
+              </ul>
+            </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/modules.html">Modules</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/procedures.html">Procedures</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/types.html">Derived Types</a>
+              </li>
+              <li class="visible-xs hidden-sm visible-lg">
+                <a href="../lists/programs.html">Programs</a>
+              </li>
+          </ul>
+            <form action="../search.html" class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+              </div>
+              <!--
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  -->
+            </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>alps_fns_rel
+      <small>Module</small>
+      
+    </h1>
+      <div class="row" id="info-bar">
+    <div class="col-lg-12">
+      <div class="well well-sm">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+          <li id="statements"><i class="fa fa-list-ol"></i>
+            <a data-toggle="tooltip"
+               data-placement="bottom" data-html="true"
+               title="19.2% of total for modules and submodules.">869 statements</a>
+          </li>
+
+        </ul>
+        <ol class="breadcrumb in-well text-right">
+          <li class="active">alps_fns_rel</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+        <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="panel panel-primary">
+      <div class="panel-heading text-left">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#funcs-0">Functions</a>
+        </h3>
+      </div>
+      <div id="funcs-0" class="panel-collapse collapse">
+        <div class="list-group">
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-integrate_res_rel">integrate_res_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-integrate_resu_rel">integrate_resU_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-principal_integral_rel">principal_integral_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-funct_g_rel">funct_g_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-landau_integrate_rel">landau_integrate_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-int_ee_rel">int_ee_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-resu_rel">resU_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-int_t_rel">int_T_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-int_t_res_rel">int_T_res_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-fact">Fact</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-bessj">BESSJ</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-bessj0">BESSJ0</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-bessj1">BESSJ1</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-gamma">Gamma</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="panel panel-primary">
+      <div class="panel-heading text-left">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#subs-0">Subroutines</a>
+        </h3>
+      </div>
+      <div id="subs-0" class="panel-collapse collapse">
+        <div class="list-group">
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-derivative_f0_rel">derivative_f0_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-polyharmonic_spline">polyharmonic_spline</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-determine_sproc_rel">determine_sproc_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-cbessj">CBESSJ</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+
+    </div>
+
+    <div class="col-md-9" id='text'>
+      <p>This module contains the relativistic numerical functions of ALPS.</p>
+<br>      
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Used by</h3>
+      </div>
+      <ul class="list-group">
+          <li class="list-group-item">
+            <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~alps_fns_rel~~UsedByGraph Pages: 1 -->
+<svg id="modulealps_fns_relUsedByGraph" width="309pt" height="200pt"
+ viewBox="0.00 0.00 309.00 200.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~alps_fns_rel~~UsedByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 196)">
+<title>module~~alps_fns_rel~~UsedByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-196 305,-196 305,4 -4,4"/>
+<!-- module~alps_fns_rel -->
+<g id="module~~alps_fns_rel~~UsedByGraph_node1" class="node">
+<title>module~alps_fns_rel</title>
+<polygon fill="none" stroke="black" points="74,-108 0,-108 0,-84 74,-84 74,-108"/>
+<text text-anchor="middle" x="37" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50">alps_fns_rel</text>
+</g>
+<!-- proc~derivative_f0 -->
+<g id="module~~alps_fns_rel~~UsedByGraph_node2" class="node">
+<title>proc~derivative_f0</title>
+<g id="a_module~~alps_fns_rel~~UsedByGraph_node2"><a xlink:href=".././proc/derivative_f0.html" xlink:title="alps_fns::derivative_f0">
+<polygon fill="#d9534f" stroke="#d9534f" points="271.5,-192 139.5,-192 139.5,-168 271.5,-168 271.5,-192"/>
+<text text-anchor="middle" x="205.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">alps_fns::derivative_f0</text>
+</a>
+</g>
+</g>
+<!-- proc~derivative_f0&#45;&gt;module~alps_fns_rel -->
+<g id="module~~alps_fns_rel~~UsedByGraph_edge1" class="edge">
+<title>proc~derivative_f0&#45;&gt;module~alps_fns_rel</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M139.46,-170.07C129.3,-167.25 119.15,-163.63 110,-159 88.75,-148.24 68.71,-129.76 55.19,-115.59"/>
+<polygon fill="#000000" stroke="#000000" points="57.75,-113.2 48.39,-108.23 52.61,-117.95 57.75,-113.2"/>
+</g>
+<!-- proc~determine_bessel_array -->
+<g id="module~~alps_fns_rel~~UsedByGraph_node3" class="node">
+<title>proc~determine_bessel_array</title>
+<g id="a_module~~alps_fns_rel~~UsedByGraph_node3"><a xlink:href=".././proc/determine_bessel_array.html" xlink:title="alps_fns::determine_bessel_array">
+<polygon fill="#d9534f" stroke="#d9534f" points="301,-150 110,-150 110,-126 301,-126 301,-150"/>
+<text text-anchor="middle" x="205.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">alps_fns::determine_bessel_array</text>
+</a>
+</g>
+</g>
+<!-- proc~determine_bessel_array&#45;&gt;module~alps_fns_rel -->
+<g id="module~~alps_fns_rel~~UsedByGraph_edge2" class="edge">
+<title>proc~determine_bessel_array&#45;&gt;module~alps_fns_rel</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M147.64,-125.99C135.2,-123.19 122.13,-120.11 110,-117 101.48,-114.81 92.44,-112.32 83.75,-109.83"/>
+<polygon fill="#000000" stroke="#000000" points="84.71,-106.46 74.13,-107.04 82.76,-113.19 84.71,-106.46"/>
+</g>
+<!-- proc~determine_nmax -->
+<g id="module~~alps_fns_rel~~UsedByGraph_node4" class="node">
+<title>proc~determine_nmax</title>
+<g id="a_module~~alps_fns_rel~~UsedByGraph_node4"><a xlink:href=".././proc/determine_nmax.html" xlink:title="alps_fns::determine_nmax">
+<polygon fill="#d9534f" stroke="#d9534f" points="282.5,-108 128.5,-108 128.5,-84 282.5,-84 282.5,-108"/>
+<text text-anchor="middle" x="205.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">alps_fns::determine_nmax</text>
+</a>
+</g>
+</g>
+<!-- proc~determine_nmax&#45;&gt;module~alps_fns_rel -->
+<g id="module~~alps_fns_rel~~UsedByGraph_edge3" class="edge">
+<title>proc~determine_nmax&#45;&gt;module~alps_fns_rel</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M128.07,-96C113.09,-96 97.8,-96 84.18,-96"/>
+<polygon fill="#000000" stroke="#000000" points="84.12,-92.5 74.12,-96 84.12,-99.5 84.12,-92.5"/>
+</g>
+<!-- proc~disp -->
+<g id="module~~alps_fns_rel~~UsedByGraph_node5" class="node">
+<title>proc~disp</title>
+<g id="a_module~~alps_fns_rel~~UsedByGraph_node5"><a xlink:href=".././proc/disp.html" xlink:title="alps_fns::disp">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="248,-66 163,-66 163,-42 248,-42 248,-66"/>
+<text text-anchor="middle" x="205.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">alps_fns::disp</text>
+</a>
+</g>
+</g>
+<!-- proc~disp&#45;&gt;module~alps_fns_rel -->
+<g id="module~~alps_fns_rel~~UsedByGraph_edge4" class="edge">
+<title>proc~disp&#45;&gt;module~alps_fns_rel</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M162.96,-62.62C146.42,-66.21 127.26,-70.57 110,-75 101.48,-77.19 92.44,-79.68 83.75,-82.17"/>
+<polygon fill="#000000" stroke="#000000" points="82.76,-78.81 74.13,-84.96 84.71,-85.54 82.76,-78.81"/>
+</g>
+<!-- proc~full_integrate -->
+<g id="module~~alps_fns_rel~~UsedByGraph_node6" class="node">
+<title>proc~full_integrate</title>
+<g id="a_module~~alps_fns_rel~~UsedByGraph_node6"><a xlink:href=".././proc/full_integrate.html" xlink:title="alps_fns::full_integrate">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="272,-24 139,-24 139,0 272,0 272,-24"/>
+<text text-anchor="middle" x="205.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">alps_fns::full_integrate</text>
+</a>
+</g>
+</g>
+<!-- proc~full_integrate&#45;&gt;module~alps_fns_rel -->
+<g id="module~~alps_fns_rel~~UsedByGraph_edge5" class="edge">
+<title>proc~full_integrate&#45;&gt;module~alps_fns_rel</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M138.96,-22.07C128.97,-24.87 119,-28.44 110,-33 88.75,-43.76 68.71,-62.24 55.19,-76.41"/>
+<polygon fill="#000000" stroke="#000000" points="52.61,-74.05 48.39,-83.77 57.75,-78.8 52.61,-74.05"/>
+</g>
+</g>
+</svg>
+</div>        <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
+          <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                </div>
+              <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a submodule to the (sub)module which it is
+descended from. Dashed arrows point from a module or program unit to 
+modules which it uses.
+</p>
+ </div>
+            </div>
+          </div>
+        </div>
+          </li>
+      </ul>
+    </div>
+
+      <br>
+
+      <section class="visible-xs visible-sm hidden-md">
+          <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="panel panel-primary">
+      <div class="panel-heading text-left">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#funcs-1">Functions</a>
+        </h3>
+      </div>
+      <div id="funcs-1" class="panel-collapse collapse">
+        <div class="list-group">
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-integrate_res_rel">integrate_res_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-integrate_resu_rel">integrate_resU_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-principal_integral_rel">principal_integral_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-funct_g_rel">funct_g_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-landau_integrate_rel">landau_integrate_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-int_ee_rel">int_ee_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-resu_rel">resU_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-int_t_rel">int_T_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-int_t_res_rel">int_T_res_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-fact">Fact</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-bessj">BESSJ</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-bessj0">BESSJ0</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-bessj1">BESSJ1</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-gamma">Gamma</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="panel panel-primary">
+      <div class="panel-heading text-left">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" href="#subs-1">Subroutines</a>
+        </h3>
+      </div>
+      <div id="subs-1" class="panel-collapse collapse">
+        <div class="list-group">
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-derivative_f0_rel">derivative_f0_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-polyharmonic_spline">polyharmonic_spline</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-determine_sproc_rel">determine_sproc_rel</a>
+            <a class="list-group-item" href="../module/alps_fns_rel.html#proc-cbessj">CBESSJ</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+
+
+      </section>
+      <br class="visible-xs visible-sm hidden-md">
+
+
+
+
+
+
+
+        <section>
+          <h2>Functions</h2>
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-integrate_res_rel"></span><h3>public  function <a href='../proc/integrate_res_rel.html'>integrate_res_rel</a>(om, nn, mode)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function performs the integration near resonances as described in Section 3.1 of the code paper for a relativistic calculation. It is only called if resonances are present in or near the integration domain.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>om</strong></td>
+            <td>
+<p>Complex wave frequency <script type="math/tex">\omega</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nn</strong></td>
+            <td>
+<p>Order of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mode</strong></td>
+            <td>
+<p>Index of the entries in the T-tensor of Eq. (2.10).</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-integrate_resu_rel"></span><h3>private  function <a href='../proc/integrate_resu_rel.html'>integrate_resU_rel</a>(sproc_rel, om, nn, mode, igamma)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function evaluates the integral with the integrand proportional to <script type="math/tex">U</script> in Eq. (2.9) of the code paper for a relativistic calculation.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sproc_rel</strong></td>
+            <td>
+<p>is_rel of the current process.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>om</strong></td>
+            <td>
+<p>Complex wave frequency <script type="math/tex">\omega</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nn</strong></td>
+            <td>
+<p>Order of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mode</strong></td>
+            <td>
+<p>Index of the entries in the T-tensor of Eq. (2.10).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>igamma</strong></td>
+            <td>
+<p>Index to loop over <script type="math/tex">\Gamma</script>.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-principal_integral_rel"></span><h3>public  function <a href='../proc/principal_integral_rel.html'>principal_integral_rel</a>(sproc_rel, om, nn, mode, igamma, ipparbar_res, upperlimit)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function performs the integration near resonances as described in Section 3.1 of the code paper for a relativistic calculation. It is only called if resonances are present in or near the integration domain.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sproc_rel</strong></td>
+            <td>
+<p>is_rel of the current process.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>om</strong></td>
+            <td>
+<p>Complex wave frequency <script type="math/tex">\omega</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nn</strong></td>
+            <td>
+<p>Order of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mode</strong></td>
+            <td>
+<p>Index of the entries in the T-tensor of Eq. (2.10).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>igamma</strong></td>
+            <td>
+<p>Index to loop over <script type="math/tex">\Gamma</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ipparbar_res</strong></td>
+            <td>
+<p>Index of the nearest relativistic parallel momentum to the resonance.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>upperlimit</strong></td>
+            <td>
+<p>Index of upper limit for integration according to Eq. (3.5).</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-funct_g_rel"></span><h3>private  function <a href='../proc/funct_g_rel.html'>funct_g_rel</a>(sproc_rel, pparbar, igamma, om, nn, mode)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function returns the function <script type="math/tex">g</script> from Eq. (3.2) of the code paper for a relativistic calculation.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sproc_rel</strong></td>
+            <td>
+<p>is_rel of the current process.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>pparbar</strong></td>
+            <td>
+<p>Relativistic parallel momentum.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>igamma</strong></td>
+            <td>
+<p>Index of <script type="math/tex">\Gamma</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>om</strong></td>
+            <td>
+<p>Complex wave frequency <script type="math/tex">\omega</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nn</strong></td>
+            <td>
+<p>Order of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mode</strong></td>
+            <td>
+<p>Index of the entries in the T-tensor of Eq. (2.10).</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-landau_integrate_rel"></span><h3>public  function <a href='../proc/landau_integrate_rel.html'>landau_integrate_rel</a>(om, nn, mode)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function evaluates the Landau contour according to Eqs. (3.8) and (3.9) of the code paper for a relativistic calculation.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>om</strong></td>
+            <td>
+<p>Complex wave frequency <script type="math/tex">\omega</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nn</strong></td>
+            <td>
+<p>Order of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mode</strong></td>
+            <td>
+<p>Index of the entries in the T-tensor of Eq. (2.10).</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-int_ee_rel"></span><h3>public  function <a href='../proc/int_ee_rel.html'>int_ee_rel</a>(om)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function returns the ee term in Eq. (2.9) for the relativistic calculation.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>om</strong></td>
+            <td>
+<p>Complex wave frequency <script type="math/tex">\omega</script>.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-resu_rel"></span><h3>public  function <a href='../proc/resu_rel.html'>resU_rel</a>(sproc_rel, om, nn, igamma, ipparbar)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function evaluates the term proportional to <script type="math/tex">U</script> in Eq. (2.9) of the code paper for the relativistic calculation.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sproc_rel</strong></td>
+            <td>
+<p>is_rel of the current process.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>om</strong></td>
+            <td>
+<p>Complex wave frequency <script type="math/tex">\omega</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nn</strong></td>
+            <td>
+<p>Order of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>igamma</strong></td>
+            <td>
+<p>Index to loop over <script type="math/tex">\Gamma</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ipparbar</strong></td>
+            <td>
+<p>Index to loop over relativistic parallel momentum.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-int_t_rel"></span><h3>private  function <a href='../proc/int_t_rel.html'>int_T_rel</a>(sproc_rel, nn, igamma, ipparbar, mode)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function returns the T-tensor according to Eq. (2.10) of the code paper for the relativistic calculation.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sproc_rel</strong></td>
+            <td>
+<p>is_rel of the current process.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nn</strong></td>
+            <td>
+<p>Order of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>igamma</strong></td>
+            <td>
+<p>Index to loop over <script type="math/tex">\Gamma</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ipparbar</strong></td>
+            <td>
+<p>Index to loop over relativistic parallel momentum.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mode</strong></td>
+            <td>
+<p>Index of the entries in the T-tensor of Eq. (2.10).</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-int_t_res_rel"></span><h3>private  function <a href='../proc/int_t_res_rel.html'>int_T_res_rel</a>(sproc_rel, nn, igamma, pparbar, mode)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function returns the T-tensor according to Eq. (2.10) of the code paper for the case in which it is evaluated at the complex resonance momentum for the relativistic calculation.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sproc_rel</strong></td>
+            <td>
+<p>is_rel of the current process.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nn</strong></td>
+            <td>
+<p>Order of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>igamma</strong></td>
+            <td>
+<p>Index to loop over <script type="math/tex">\Gamma</script>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>pparbar</strong></td>
+            <td>
+<p>Relativistic parallel momentum.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>mode</strong></td>
+            <td>
+<p>Index of the entries in the T-tensor of Eq. (2.10).</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doublecomplex</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-fact"></span><h3>private  function <a href='../proc/fact.html'>Fact</a>(k)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function returns the factorial k! of its argument k.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>k</strong></td>
+            <td>
+<p>Argument of the factorial.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doubleprecision</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-bessj"></span><h3>public  function <a href='../proc/bessj.html'>BESSJ</a>(N, X)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function calculates the first kind Bessel function
+of integer order N, for any REAL X. We use here the classical
+recursion formula, when X &gt; N. For X &lt; N, Miller's algorithm
+is used to avoid overflows. Reference:
+C.W.Clenshaw, Chebyshev Series for Mathematical Functions, Mathematical Tables, Vol. 5, 1962.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>N</strong></td>
+            <td>
+<p>Order of Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>X</strong></td>
+            <td>
+<p>Argument of the Bessel function.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doubleprecision</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-bessj0"></span><h3>public  function <a href='../proc/bessj0.html'>BESSJ0</a>(X)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function calculates the first kind Bessel function
+of order 0, for any REAL X. The polynomial approximation by
+series of Chebyshev polynomials is used for 0&lt;X&lt;8 and 0&lt;8/X&lt;1. References:
+M.Abramowitz, I.A.Stegun, Handbook of Mathematical Functions, 1965. C.W.Clenshaw, Chebyshev Series for Mathematical Functions, Mathematical Tables, Vol. 5, 1962.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>X</strong></td>
+            <td>
+<p>Argument of the Bessel function.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doubleprecision</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-bessj1"></span><h3>public  function <a href='../proc/bessj1.html'>BESSJ1</a>(X)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This subroutine calculates the First Kind Bessel Function of
+order 1, for any real number X. The polynomial approximation by
+series of Chebyshev polynomials is used for 0&lt;X&lt;8 and 0&lt;8/X&lt;1. References:
+M.Abramowitz, I.A.Stegun, Handbook of Mathematical Functions, 1965. C.W.Clenshaw, Chebyshev Series for Mathematical Functions, Mathematical Tables, Vol. 5, 1962.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>X</strong></td>
+            <td>
+<p>Argument of the Bessel function.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doubleprecision</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-gamma"></span><h3>public  function <a href='../proc/gamma.html'>Gamma</a>(xx)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This function returns the Gamma-function.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>xx</strong></td>
+            <td>
+<p>Argument of the Gamma-function.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>doubleprecision</small>
+    </h4>
+    
+
+    </div>
+  </div>
+
+        </section>
+        <br>
+
+        <section>
+          <h2>Subroutines</h2>
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-derivative_f0_rel"></span><h3>public  subroutine <a href='../proc/derivative_f0_rel.html'>derivative_f0_rel</a>(is, is_rel)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This subroutine calculates the derivatives of the background velocity distribution function f0 for the relativistic calculation.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>is</strong></td>
+            <td>
+<p>Index of particle species.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>is_rel</strong></td>
+            <td>
+<p>Index for relativistic species (if any).</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-polyharmonic_spline"></span><h3>public  subroutine <a href='../proc/polyharmonic_spline.html'>polyharmonic_spline</a>(grid_coarse, gamma_coarse, pparbar_coarse, n_coarse, gamma_rel, pparbar, ngamma, npparbar, smoothing, f0_rel, is_rel, nspec_rel)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This soubroutine interpolates the grid with a polyharmonic thin-plate spline.
+This subroutine needs the LUPACK and BLAS libraries to evoke the dgesv subroutine.
+The method uses the Thin Plate Spline.
+We use these resources:
+<a href="http://cseweb.ucsd.edu/~sjb/eccv_tps.pdf">http://cseweb.ucsd.edu/~sjb/eccv_tps.pdf</a>
+<a href="http://www.univie.ac.at/nuhag-php/bibtex/open_files/po94_M%20J%20D%20Powell%2003%2093.pdf">http://www.univie.ac.at/nuhag-php/bibtex/open_files/po94_M%20J%20D%20Powell%2003%2093.pdf</a>
+<a href="http://vision.ucsd.edu/sites/default/files/fulltext(4).pdf">http://vision.ucsd.edu/sites/default/files/fulltext(4).pdf</a></p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>grid_coarse</strong>(n_coarse)</td>
+            <td>
+<p>Coarse input grid for interpolation.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>gamma_coarse</strong>(n_coarse)</td>
+            <td>
+<p>Coordinates of <script type="math/tex">\Gamma</script> on coarse grid.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>pparbar_coarse</strong>(n_coarse)</td>
+            <td>
+<p>Coordinates of relativistic parallel momentum on coarse grid.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>n_coarse</strong></td>
+            <td>
+<p>Number of entries in coarse grid.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>gamma_rel</strong>(nspec_rel,0:ngamma,0:npparbar)</td>
+            <td>
+<p>Coordinates of <script type="math/tex">\Gamma</script> on fine grid.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>pparbar</strong>(nspec_rel,0:ngamma,0:npparbar)</td>
+            <td>
+<p>Coordinates of relativistic parallel momentum on fine grid.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ngamma</strong></td>
+            <td>
+<p>Number of <script type="math/tex">\Gamma</script> steps on fine output grid.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>npparbar</strong></td>
+            <td>
+<p>Number of parallel momentum steps on fine output grid.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>smoothing</strong></td>
+            <td>
+<p>Smoothing parameter for spline interpolation.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double precision,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>f0_rel</strong>(nspec_rel,0:ngamma,0:npparbar)</td>
+            <td>
+<p>Fine output grid after interpolation.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>is_rel</strong></td>
+            <td>
+<p>Index for relativistic species (if any).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer
+            </td>
+<td></td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nspec_rel</strong></td>
+            <td>
+<p>Number of relativistic species.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-determine_sproc_rel"></span><h3>private  subroutine <a href='../proc/determine_sproc_rel.html'>determine_sproc_rel</a>(sproc_rel)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This subroutine determines sproc_rel for the given process.</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>sproc_rel</strong></td>
+            <td>
+<p>is_rel of the current process.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="panel panel-default">
+    <div class="panel-heading codesum"><span class="anchor" id="proc-cbessj"></span><h3>public  subroutine <a href='../proc/cbessj.html'>CBESSJ</a>(z, nu, z1)  
+</h3></div>
+    <div class="panel-body">
+          
+  <p>This subroutine calculates the complex Bessel function. It is based on the CBESSJ function release 1.1 by J-P Moreau, Paris (www.jpmoreau.fr).</p>
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th>Type</th>
+<th>Intent</th><th>Optional</th>        <th>Attributes</th>
+        <th></th>
+        <th>Name</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>z</strong></td>
+            <td>
+<p>Argument of the Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>nu</strong></td>
+            <td>
+<p>Order of Bessel function.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" ></span>
+              double complex,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>z1</strong></td>
+            <td>
+<p>Resulting value of Bessel function.</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+        </section>
+        <br>
+
+
+
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-6"><p>ALPS was developed by Kristopher Klein, Daniel Verscharen<br>&copy; 2023 
+</p>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <p class="text-right">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+         <!-- Placed at the end of the document so the pages load faster -->
+    <!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        -->
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+        <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>
